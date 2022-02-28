@@ -10,6 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       type="text/css"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
 
     <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,8 +37,13 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
-      <span id="write-tweet"><strong>Write</strong>a new tweet</span>
+      <div>
+        <span>tweeter</span>
+      </div>
+      <div class="header">
+        <span id="write-tweet"><strong>Write</strong>a new tweet</span>
+        <i class="fa-solid fa-angles-down double-arrow"></i>
+      </div>
     </nav>
 
     <!-- Page-specific (main) content here -->
