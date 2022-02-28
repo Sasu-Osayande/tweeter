@@ -19,3 +19,14 @@ b, strong {
   font-weight: bolder;
   padding-right: 6px;
 }
+
+.header {
+  height: 14px;
+}
+
+.double-arrow {
+  color: red;
+  position: relative;
+  top: 8px;
+  left: 678px;
+}
