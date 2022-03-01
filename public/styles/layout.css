@@ -32,11 +32,9 @@ body, .container {
   background-color: #f4f1ec;
 }
 
-p {
+.container {
   clear: both;
   width: 90%;
-  display: flex;
-  justify-content: center;
   z-index: 50;
   position: absolute;
   right: 0;
@@ -44,5 +42,4 @@ p {
   bottom: 0;
   top: 531px;
   padding-left: 1.5em;
-  padding-right: 1.5em;
  }
