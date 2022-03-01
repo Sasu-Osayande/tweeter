@@ -4,13 +4,13 @@
 }
 
 .profile-name {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 header.background {
   background-image: url(https://www.transparenttextures.com/patterns/xv.png);
   background-color: rgb(255, 251, 190);
-  z-index: 2;
+  z-index: 200;
   clear: both;
   display: flex;
   justify-content: center;
@@ -21,4 +21,18 @@ header.background {
   top: 120px;
   right: 0px;
   left: 0px;
+}
+
+.username {
+  position: relative;
+    bottom: 79px;
+  color: #FFFFFF;
+}
+
+#name {
+  font-size: 35px;
+}
+
+h2 {
+  font-weight: 300;
 }
