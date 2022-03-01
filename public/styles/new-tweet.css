@@ -8,7 +8,7 @@
 }
 
 #text-title {
-  font-weight: bolder; 
+  font-weight: bolder;
   font-size: 21px;
   padding-bottom: 3px;
 }
@@ -25,15 +25,82 @@
 }
 
 .submit-button {
-  background-color: #4056A1;
-  font-family: 'Bungee', cursive;
-  color: #FFFFFF;
+  background-color: #4056a1;
+  font-family: "Bungee", cursive;
+  color: #ffffff;
 }
 
 .counter {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   position: relative;
-    top: -38px;
+  top: -38px;
+}
+
+.tweet-container {
+  height: 156px;
+  border: solid 2.5px;
+  position: relative;
+  left: 27px;
+  padding: 10px;
+}
+
+.tweet-message {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 black;
+  margin-bottom: 26px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  position: relative;
+  top: -50px;
+}
+
+.handle {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: silver;
+  position: relative;
+  bottom: 66px;
+}
+
+.avatar {
+  height: 33px;
+  display: inline;
+  justify-content: flex-start;
+  padding-right: 10px;
+  position: relative;
+  top: 7px;
+}
+
+.user {
+  margin-top: 0px;
+  position: relative;
+  bottom: 8px;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 71px;
+  font-size: 9px;
+}
+
+.fa-retweet {
+  padding-left: 4px;
+}
+
+.fa-heart {
+  padding-right: 9px;
+  padding-left: 4px;
+}
+
+.time {
+  position: relative;
+  right: 706px;
+  bottom: 10px;
 }
