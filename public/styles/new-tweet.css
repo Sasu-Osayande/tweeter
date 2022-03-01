@@ -38,6 +38,10 @@
   top: -38px;
 }
 
+.tweet-container:hover {
+  box-shadow: 5px 5px 2px 1px hsl(223, 55%, 72%, 0.7);
+}
+
 .tweet-container {
   height: 156px;
   border: solid 2.5px;
@@ -88,6 +92,10 @@ footer {
   position: relative;
   bottom: 71px;
   font-size: 9px;
+}
+
+.fa-retweet:hover, .fa-heart:hover, .fa-flag:hover {
+  color: rgb(191, 140, 45);
 }
 
 .fa-retweet {
