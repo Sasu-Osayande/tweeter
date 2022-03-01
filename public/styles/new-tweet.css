@@ -1,0 +1,39 @@
+.submission {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 35px;
+  position: relative;
+  left: 27px;
+}
+
+#text-title {
+  font-weight: bolder; 
+  font-size: 21px;
+  padding-bottom: 3px;
+}
+
+#tweet-text {
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 black;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+}
+
+.counter {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Bungee', cursive;
+  position: relative;
+    top: -38px;
+}
