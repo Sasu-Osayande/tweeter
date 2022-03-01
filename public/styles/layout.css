@@ -16,7 +16,6 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
@@ -28,3 +27,22 @@ nav {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body, .container {
+  background-color: #f4f1ec;
+}
+
+p {
+  clear: both;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 531px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+ }
