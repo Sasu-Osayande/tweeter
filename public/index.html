@@ -10,9 +10,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       type="text/css"
     />
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Custom Fonts -->
@@ -36,11 +39,35 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
+    <header
+      class="profile-header"
+      style="
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        bottom: 0px;
+        top: 316px;
+        right: 0px;
+        left: 0px;
+      "
+    >
+      <div>
+        <img class="profile-name" src="/images/profile-hex.png" />
+      </div>
+      <br />
+      <div>
+        <h2>Sasu Osayande</h2>
+      </div>
+    </header>
     <nav>
       <div>
         <span>tweeter</span>
       </div>
-      <div class="header">
+      <div class="right-header">
         <span id="write-tweet"><strong>Write</strong>a new tweet</span>
         <i class="fa-solid fa-angles-down double-arrow"></i>
       </div>
