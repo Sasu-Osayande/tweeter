@@ -38,16 +38,17 @@
   top: -38px;
 }
 
-.tweet-container:hover {
+.tweet-border:hover {
   box-shadow: 5px 5px 2px 1px hsl(223, 55%, 72%, 0.7);
 }
 
-.tweet-container {
+.tweet-border {
   height: 156px;
   border: solid 2.5px;
   position: relative;
   left: 27px;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .tweet-message {
