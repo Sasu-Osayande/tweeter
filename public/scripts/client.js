@@ -4,18 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// const tweetData = {
-//   "user": {
-//     "name": "Newton",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//       "handle": "@SirIsaac"
-//     },
-//   "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//   "created_at": 1461116232227
-// }
-
 const data = [
   {
     "user": {
@@ -60,9 +48,6 @@ const createTweetElement = function(tweet) {
 return $tweetPost;
   };
 
-   // console.log($tweet); // to see what it looks like
-  // $('#tweet-container').append($tweet);
-  // renderTweets(data);
   const renderTweets = function(tweetData) {
     // loops through tweets
     for(let tweet of tweetData) {
@@ -72,8 +57,20 @@ return $tweetPost;
     }
     }
 
-// const $tweet = createTweetElement(data);
-
 $(document).ready(function() {
   renderTweets(data);
+});
+
+$("form").submit(function(e) {
+  e.preventDefault()
+  console.log("Hi there!")
+});
+
+const formData = $("form").serialize();
+console.log("Hi there!", formData)
+
+$.ajax({
+  url: "/tweets",
+  method: "POST",
+  data: formData,
 });
