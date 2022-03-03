@@ -56,10 +56,11 @@
   border-bottom: 1px solid black;
   box-shadow: 0 1px 0 0 black;
   margin-bottom: 26px;
-  padding-bottom: 25px;
+  padding-bottom: 9px;
   font-size: 18px;
   position: relative;
   top: -50px;
+  word-wrap: break-word;
 }
 
 .handle {
