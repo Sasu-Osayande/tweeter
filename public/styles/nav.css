@@ -38,4 +38,21 @@ b, strong {
   position: relative;
   top: 8px;
   left: 678px;
+
+  position: relative;
+  animation: bounce 1s 0.6s ease-in-out infinite;
+}
+
+/* animation */
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -6px;
+  }
+  100% {
+    top: 0;
+  }
 }
