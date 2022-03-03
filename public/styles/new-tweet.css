@@ -113,3 +113,21 @@ footer {
   right: 706px;
   bottom: 10px;
 }
+
+.warning {
+  color: red;
+}
+
+#empty-error, #too-long-error {
+  background-color: rgb(237 186 186);
+  color: red;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 37px;
+  position: relative;
+  left: 27px;
+}
