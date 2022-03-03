@@ -32,7 +32,7 @@ $(document).ready(function () {
       tweet.user.name
     }</h5>
       <p class="handle">${tweet.user.handle}</p>
-      <p class="tweet-message">${escape(tweet.content.text)}</p>
+      <p class="tweet-message" id="text">${escape(tweet.content.text)}</p>
     </header>
       <footer>
         <p class="time">${timeago.format(tweet.created_at)}</p>
@@ -57,6 +57,7 @@ $(document).ready(function () {
       $("#too-long-error").hide();
       return;
     }
+    $("#empty-error").slideUp();
 
     if (input.length > 140) {
       // toggles if error. Then slides down again if error persists after submission
@@ -65,6 +66,7 @@ $(document).ready(function () {
       $("#empty-error").hide();
       return;
     }
+    $("#too-long-error").slideUp();
 
     const formData = $("form").serialize();
     // clears the input field after a submission
