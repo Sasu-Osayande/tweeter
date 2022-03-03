@@ -4,7 +4,16 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(function () {
+  $("#empty-error").hide();
+  $("#too-long-error").hide();
+
   const renderTweets = function (tweetData) {
     $("#tweet-container").empty();
     // loops through tweets
@@ -23,7 +32,7 @@ $(document).ready(function () {
       tweet.user.name
     }</h5>
       <p class="handle">${tweet.user.handle}</p>
-      <p class="tweet-message">${tweet.content.text}</p>
+      <p class="tweet-message">${escape(tweet.content.text)}</p>
     </header>
       <footer>
         <p class="time">${timeago.format(tweet.created_at)}</p>
@@ -42,15 +51,26 @@ $(document).ready(function () {
     const input = $("#tweet-text").val();
 
     if (!input) {
-      alert("Tweet is not present.");
+      // toggles if error. Then slides down again if error persists after submission
+      $("#empty-error").slideToggle();
+      $("#empty-error").slideDown();
+      $("#too-long-error").hide();
       return;
     }
+
     if (input.length > 140) {
-      alert("Tweet content is too long.");
+      // toggles if error. Then slides down again if error persists after submission
+      $("#too-long-error").slideToggle();
+      $("#too-long-error").slideDown();
+      $("#empty-error").hide();
       return;
     }
 
     const formData = $("form").serialize();
+    // clears the input field after a submission
+    $(".submission").trigger("reset");
+    // returns the counter back to 140
+    $(".counter").val(140);
 
     $.ajax({
       url: "/tweets",
