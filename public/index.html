@@ -72,6 +72,16 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div id="empty-error">
+          <i class="fa-solid fa-xmark warning"></i>
+          Input field cannot be blank.
+          <i class="fa-solid fa-xmark warning"></i>
+        </div>
+        <div id="too-long-error">
+          <i class="fa-solid fa-xmark warning"></i>
+            Input field contains too many characters.
+          <i class="fa-solid fa-xmark warning"></i>
+        </div>
         <form class="submission" method="POST" action="/tweets/">
           <label id="text-title" for="tweet-text">What are you humming about?</label>
           <textarea name="text" rows="2" id="tweet-text"></textarea>
