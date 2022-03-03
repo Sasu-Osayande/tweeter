@@ -6,6 +6,7 @@
 
 $(document).ready(function () {
   const renderTweets = function (tweetData) {
+    $("#tweet-container").empty();
     // loops through tweets
     for (let tweet of tweetData) {
       // calls createTweetElement for each tweet
@@ -37,6 +38,17 @@ $(document).ready(function () {
 
   $("form").submit(function (e) {
     e.preventDefault();
+
+    const input = $("#tweet-text").val();
+
+    if (!input) {
+      alert("Tweet is not present.");
+      return;
+    }
+    if (input.length > 140) {
+      alert("Tweet content is too long.");
+      return;
+    }
 
     const formData = $("form").serialize();
 
