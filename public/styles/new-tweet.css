@@ -303,9 +303,8 @@
     font-size: 23px;
     font-weight: bolder;
     overflow: visible;
-    width: 50%;
     position: relative;
-    left: 451px;
+    right: 66px;
   }
 
   .submit-button {
@@ -313,7 +312,7 @@
     font-family: "Bungee", cursive;
     color: #ffffff;
     position: relative;
-    left: 452px;
+    right: 66px;
   }
 
   .counter {
@@ -322,8 +321,7 @@
     font-family: "Bungee", cursive;
     position: relative;
     top: -38px;
-    width: 50%;
-    left: 452px;
+    right: 66px;
   }
 
   .tweet-border:hover {
@@ -403,7 +401,7 @@
 
   .time {
     position: relative;
-    right: 336px;
+    right: 346px;
     bottom: 10px;
   }
 
