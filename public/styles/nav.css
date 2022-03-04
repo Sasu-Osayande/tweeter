@@ -1,4 +1,4 @@
-.right-header {
+/* .right-header {
   position: relative;
   z-index: 3;
 }
@@ -49,7 +49,7 @@ b, strong {
 
 /* animation */
 
-@keyframes bounce {
+/* @keyframes bounce {
   0% {
     top: 0;
   }
@@ -58,5 +58,206 @@ b, strong {
   }
   100% {
     top: 0;
+  }
+} */
+
+@media screen and (max-width: 539.99px) {
+  .right-header {
+    position: relative;
+    z-index: 3;
+  }
+  
+  nav {
+    height: 120px;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #write-tweet {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 4.64em;
+    padding-bottom: 0px;
+    /* padding-left: 22.1em; */
+    /* padding-bottom: 5px; */
+  }
+  
+  #logo {
+    font-size: 37px;
+  }
+  
+  b, strong {
+    font-weight: bolder;
+    padding-right: 6px;
+  }
+  
+  .header {
+    height: 14px;
+  }
+  
+  .double-arrow {
+    color: red;
+    top: 8px;
+    left: 193px;
+  
+    position: relative;
+    animation: bounce 1s 0.6s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -6px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 540px) {
+  .right-header {
+    position: relative;
+    z-index: 3;
+  }
+  
+  nav {
+    height: 120px;
+    /* background-color: #4056A1; */
+    color: #FFFFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-image: url(https://www.transparenttextures.com/patterns/xv.png);
+    background-color: rgb(99 97 133);
+  }
+  
+  #write-tweet {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 14.14em;
+    padding-bottom: 0px;
+    /* padding-left: 22.1em; */
+    /* padding-bottom: 5px; */
+  }
+  
+  #logo {
+    font-size: 37px;
+  }
+  
+  b, strong {
+    font-weight: bolder;
+    padding-right: 6px;
+  }
+  
+  .header {
+    height: 14px;
+  }
+  
+  .double-arrow {
+    color: red;
+    top: 8px;
+    left: 419px;
+  
+    position: relative;
+    animation: bounce 1s 0.6s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -6px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .right-header {
+    position: relative;
+    z-index: 3;
+  }
+  
+  nav {
+    height: 120px;
+    background-color: #4056A1;
+    background-image: none;
+    color: #FFFFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #write-tweet {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 22.1em;
+    padding-bottom: 5px;
+  }
+  
+  #logo {
+    font-size: 37px;
+  }
+  
+  b, strong {
+    font-weight: bolder;
+    padding-right: 6px;
+  }
+  
+  .header {
+    height: 14px;
+  }
+  
+  .double-arrow {
+    color: red;
+    top: 8px;
+    left: 611px;
+  
+    position: relative;
+    animation: bounce 1s 0.6s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -6px;
+    }
+    100% {
+      top: 0;
+    }
   }
 }
