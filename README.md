@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+![Tweeter Tablet View](https://github.com/Sasu-Osayande/tweeter/blob/master/docs/Tweeter%20Tablet%20View.png?raw=true)
+![Tweeter Desktop View](https://github.com/Sasu-Osayande/tweeter/blob/master/docs/Tweeter%20Desktop%20View.png?raw=true)
