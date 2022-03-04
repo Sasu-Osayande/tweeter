@@ -1,48 +1,4 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
-/* html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-} */
-
-/*
- * Global layout stuff
- */
-
-/* body {
-  color: #545149;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
-}
-
-nav {
-  font-family: 'Bungee', cursive;
-} */
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
-/* body, .container {
-  background-color: #f4f1ec;
-}
-
-.container {
-  clear: both;
-  width: 90%;
-  z-index: 50;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 531px;
-  padding-left: 1.5em;
- } */
+/* mobile view */
 
  @media screen and (max-width: 539.99px) {
   html {
@@ -51,11 +7,7 @@ nav {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
-  /*
-   * Global layout stuff
-   */
-  
+
   body {
     color: #545149;
     font-family: 'Source Sans Pro', sans-serif;
@@ -79,13 +31,10 @@ nav {
     left: 0;
     bottom: 0;
     top: 531px;
-    /* padding-left: 1.5em; */
    }
  }
 
-
-
-
+/* tablet view */
 
  @media screen and (min-width: 540px) {
   html {
@@ -94,10 +43,6 @@ nav {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
-  /*
-   * Global layout stuff
-   */
   
   body {
     color: #545149;
@@ -126,7 +71,7 @@ nav {
    }
  }
 
-
+/* desktop view */
 
  @media screen and (min-width: 769px) {
   html {
@@ -135,11 +80,7 @@ nav {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
-  /*
-   * Global layout stuff
-   */
-  
+
   body {
     color: #545149;
     font-family: 'Source Sans Pro', sans-serif;
@@ -163,34 +104,19 @@ nav {
     left: 0;
     bottom: 0;
     top: 531px;
-    /* padding-left: 1.5em; */
-
     display: flex;
     justify-content: flex-end;
-    /* flex-direction: column; */
-    /* overflow-y: auto; */
    }
 
    .tweet-container {
     width: 50%;
-    /* position: relative; */
-    /* top: 700px; */
-
     margin-left: 0px;
-    /* position: relative; */
     left: 550px;
     top: 0px;
-
     width: 45%;
     position: relative;
     top: -300px;
-    /* bottom: 400px; */
     left: 600px;
     overscroll-behavior: inherit;
    }
-
-   /* .main-section {
-    display: flex;
-    justify-content: flex-end;
-   } */
  }
