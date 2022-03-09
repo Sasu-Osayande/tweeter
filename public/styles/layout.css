@@ -32,6 +32,11 @@
     bottom: 0;
     top: 531px;
    }
+
+   #right-write-tweet {
+    position: absolute;
+    right: -116px;
+   }
  }
 
 /* tablet view */
@@ -68,6 +73,11 @@
     bottom: 0;
     top: 531px;
     padding-left: 1em;
+   }
+   
+   #right-write-tweet {
+    position: absolute;
+    right: -116px;
    }
  }
 

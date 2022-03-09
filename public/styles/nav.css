@@ -67,7 +67,8 @@
 
 @media screen and (min-width: 540px) {
   .right-header {
-    position: relative;
+    position: absolute;
+    right: 145px;
     z-index: 3;
   }
   
@@ -133,7 +134,8 @@
 
 @media screen and (min-width: 769px) {
   .right-header {
-    position: relative;
+    position: absolute;
+    right: 145px;
     z-index: 3;
   }
   
