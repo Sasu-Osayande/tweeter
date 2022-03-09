@@ -95,6 +95,7 @@
   }
   
   .profile-name {
+    padding-top: 0px;
     margin-bottom: 28px;
 
     width: 80%;
