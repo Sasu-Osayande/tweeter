@@ -67,7 +67,7 @@
         <span id="logo">tweeter</span>
       </div>
       <div class="right-header">
-        <span id="write-tweet"><b>Write</b>a new tweet</span>
+        <span id="write-tweet"><b>Write</b><span id="right-write-tweet">a new tweet</span></span>
         <i class="fa-solid fa-angles-down double-arrow"></i>
       </div>
     </nav>
@@ -76,26 +76,23 @@
     <main class="container">
       <div class="main-section">
         <section class="new-tweet">
-          <div id="empty-error">
-            <i class="fa-solid fa-xmark warning"></i>
-            Input field cannot be blank.
-            <i class="fa-solid fa-xmark warning"></i>
-          </div>
-          <div id="too-long-error">
-            <i class="fa-solid fa-xmark warning"></i>
-            Input field contains too many characters.
-            <i class="fa-solid fa-xmark warning"></i>
-          </div>
           <form class="submission" method="POST" action="/tweets/">
+            <div id="empty-error">
+              <i class="fa-solid fa-xmark warning"></i>
+              Input field cannot be blank.
+              <i class="fa-solid fa-xmark warning"></i>
+            </div>
+            <div id="too-long-error">
+              <i class="fa-solid fa-xmark warning"></i>
+              Input field contains too many characters.
+              <i class="fa-solid fa-xmark warning"></i>
+            </div>
             <label id="text-title" for="tweet-text"></label>
-            <textarea
-              name="text"
-              rows="2"
-              id="tweet-text"
-              placeholder="What are you humming about?">
-            </textarea>
+            <textarea name="text" rows="2" id="tweet-text" placeholder="What are you humming about?"></textarea>
             <div>
-              <button class="submit-button" type="submit">Tweet</button>
+              <label for="submit">
+                <button class="submit-button" type="submit" id="submit" style="z-index: 50;">Tweet</button>
+              </label>
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
           </form>
