@@ -23,9 +23,9 @@
     overflow: visible;
   }
 
-  .submit-button {
+  .container .submit-button {
     background-color: #4056a1;
-    font-family: "Bungee", cursive;
+    font-family: "Bungee";
     color: #ffffff;
   }
 
@@ -66,7 +66,7 @@
   .handle {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 23px;
     color: silver;
     position: relative;
     bottom: 66px;
@@ -74,7 +74,7 @@
   }
 
   .avatar {
-    height: 33px;
+    height: 40px;
     display: inline;
     justify-content: flex-start;
     padding-right: 10px;
@@ -94,7 +94,7 @@
     justify-content: flex-end;
     position: relative;
     bottom: 71px;
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .fa-retweet:hover,
@@ -114,7 +114,7 @@
 
   .time {
     position: relative;
-    right: 355px;
+    right: 291px;
     bottom: 10px;
   }
 
@@ -206,7 +206,7 @@
   .handle {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 23px;
     color: silver;
     position: relative;
     bottom: 66px;
@@ -214,7 +214,7 @@
   }
 
   .avatar {
-    height: 33px;
+    height: 40px;
     display: inline;
     justify-content: flex-start;
     padding-right: 10px;
@@ -234,7 +234,7 @@
     justify-content: flex-end;
     position: relative;
     bottom: 71px;
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .fa-retweet:hover,
@@ -254,7 +254,7 @@
 
   .time {
     position: relative;
-    right: 538px;
+    right: 474px;
     bottom: 10px;
   }
 
@@ -281,7 +281,7 @@
 /* desktop view */
 
 @media screen and (min-width: 769px) {
-  .submission {
+  .new-tweet .submission {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -353,7 +353,7 @@
   .handle {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 23px;
     color: silver;
     position: relative;
     bottom: 66px;
@@ -361,7 +361,7 @@
   }
 
   .avatar {
-    height: 33px;
+    height: 40px;
     display: inline;
     justify-content: flex-start;
     padding-right: 10px;
@@ -381,7 +381,7 @@
     justify-content: flex-end;
     position: relative;
     bottom: 71px;
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .fa-retweet:hover,
@@ -401,7 +401,7 @@
 
   .time {
     position: relative;
-    right: 346px;
+    right: 291px;
     bottom: 10px;
   }
 
@@ -421,6 +421,6 @@
     margin-right: 1.5em;
     margin-top: 37px;
     position: relative;
-    left: 27px;
+    left: -68px;
   }
 }
